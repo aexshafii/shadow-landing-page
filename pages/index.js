@@ -96,6 +96,44 @@ export default function Home() {
       </section>
     );
   };
+  const ExtraFeaturesSection = () => {
+    return (
+      <section className="   ">
+        <div className=" text-center text-base m-auto  pt-24   	">
+          <Image
+            src={shareplayLogo}
+            alt="Apple share play logo"
+            quality={100}
+            width={125}
+            height={125}
+            placeholder="blur"
+          />
+        </div>
+        <div className="font-semibold text-center m-auto pb-6  ">
+          Share Play
+        </div>
+
+        <div className="mb-12 w-48 m-auto">
+          Enjoy your favorite podcast with your favorite people on FaceTime.{" "}
+        </div>
+        <div className=" text-center text-base m-auto  pt-12   	">
+          <Image
+            src={cloudSecurityIllustration}
+            alt="cloud security 3d illustration"
+            quality={100}
+            width={180}
+            height={140}
+            placeholder="blur"
+          />
+        </div>
+        <div className="font-semibold text-center m-auto pb-6  ">Privacy</div>
+
+        <div className="mb-24 w-48 m-auto">
+          No third-party analytics, ad services, or tracking code.
+        </div>
+      </section>
+    );
+  };
   return (
     <div>
       <Head>
@@ -107,40 +145,7 @@ export default function Home() {
         <NavBarSection />
         <HeroSection />
         <MainFeaturesSection />
-        <section className="   ">
-          <div className=" text-center text-base m-auto  pt-24   	">
-            <Image
-              src={shareplayLogo}
-              alt="Colorful iphones showing color customization"
-              quality={100}
-              width={125}
-              height={125}
-              placeholder="blur"
-            />
-          </div>
-          <div className="font-semibold text-center m-auto pb-6  ">
-            Share Play
-          </div>
-
-          <div className="mb-12 w-48 m-auto">
-            Enjoy your favorite podcast with your favorite people on FaceTime.{" "}
-          </div>
-          <div className=" text-center text-base m-auto  pt-12   	">
-            <Image
-              src={cloudSecurityIllustration}
-              alt="Colorful iphones showing color customization"
-              quality={100}
-              width={180}
-              height={140}
-              placeholder="blur"
-            />
-          </div>
-          <div className="font-semibold text-center m-auto pb-6  ">Privacy</div>
-
-          <div className="mb-24 w-48 m-auto">
-            No third-party analytics, ad services, or tracking code.
-          </div>
-        </section>
+        <ExtraFeaturesSection />
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t"></footer>
