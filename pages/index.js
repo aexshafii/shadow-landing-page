@@ -149,64 +149,63 @@ export default function Home() {
         <HeroSection />
         <MainFeaturesSection />
         <ExtraFeaturesSection />
-        <section className="bg-primary pt-24 text-white">
-          <div className="font-bold  text-2xl w-72 m-auto pb-24 ">
-            The easiest way to follow, download and listen to podcasts
-          </div>
-          <div class="grid grid-cols-2 gap-4 pl-12 text-white  text-xl pb-16">
-            <div>
-              <h2 className="font-bold  w-42 m-auto  ">
-                Scan to download Shadow
-              </h2>
-              →
+        <footer className="flex items-center justify-center w-full ">
+          <section className="bg-primary pt-24 text-white">
+            <div className="font-bold  text-2xl w-72 m-auto pb-24 ">
+              The easiest way to follow, download and listen to podcasts
             </div>
-            <div>
-              <Image
-                src={qrCode}
-                alt="qr code to download shadow app on apple app store"
-                quality={100}
-                width={100}
-                height={100}
-                placeholder="blur"
-              />
-            </div>
-          </div>
-          <div className="flex">
-            <div>
-              <div className="m-auto pl-12 pb-12 font-normal">
-                {" "}
-                Available for
+            <div class="grid grid-cols-2 gap-4 pl-12 text-white  text-xl pb-16">
+              <div>
+                <h2 className="font-bold  w-42 m-auto  ">
+                  Scan to download Shadow
+                </h2>
+                →
               </div>
-              <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
-              <h1 className="ml-12 font-normal text-3xl"> iPad</h1>
+              <div>
+                <Image
+                  src={qrCode}
+                  alt="qr code to download shadow app on apple app store"
+                  quality={100}
+                  width={100}
+                  height={100}
+                  placeholder="blur"
+                />
+              </div>
             </div>
-            <div className="m-auto text-center pt-12 animate-bounce">
-              <Image
-                src={airPod}
-                alt="qr code to download shadow app on apple app store"
-                quality={100}
-                width={300}
-                height={150}
-                placeholder="blur"
-              />
+            <div className="flex">
+              <div>
+                <div className="m-auto pl-12 pb-12 font-normal">
+                  Available for
+                </div>
+                <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
+                <h1 className="ml-12 font-normal text-3xl"> iPad</h1>
+              </div>
+              <div className="m-auto text-center pt-12 animate-bounce">
+                <Image
+                  src={airPod}
+                  alt="qr code to download shadow app on apple app store"
+                  quality={100}
+                  width={300}
+                  height={150}
+                  placeholder="blur"
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex pt-12">
-            <div className="  ml-8 w-24 pt-4">
-              <Image
-                src={logo}
-                alt="Shadow Logo"
-                width={120}
-                height={120}
-                placeholder="blur"
-              />
+            <div className="flex pt-12">
+              <div className="ml-8 w-24 pt-4">
+                <Image
+                  src={logo}
+                  alt="Shadow Logo"
+                  width={120}
+                  height={120}
+                  placeholder="blur"
+                />
+              </div>
+              <div className="text-3xl pt-12 pb-24">Shadow</div>
             </div>
-            <div className="text-3xl pt-12">Shadow</div>
-          </div>
-        </section>
+          </section>
+        </footer>
       </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t"></footer>
     </div>
   );
 }
