@@ -116,7 +116,7 @@ export default function Home() {
           Share Play
         </div>
 
-        <div className="mb-12 w-48 m-auto">
+        <div className="mb-12 w-52 m-auto">
           Enjoy your favorite podcast with your favorite people on FaceTime.{" "}
         </div>
         <div className=" text-center text-base m-auto  pt-12   	">
@@ -131,7 +131,7 @@ export default function Home() {
         </div>
         <div className="font-semibold text-center m-auto pb-6  ">Privacy</div>
 
-        <div className="mb-24 w-48 m-auto">
+        <div className="mb-24 w-56 m-auto">
           No third-party analytics, ad services, or tracking code.
         </div>
       </section>
