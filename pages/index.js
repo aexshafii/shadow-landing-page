@@ -3,6 +3,8 @@ import Image from "next/image";
 import logo from "../public/logo.png";
 import iphoneHero from "../public/iphone-hero.png";
 import appStore from "../public/app-store.png";
+import ipadMockup from "../public/ipad-mockup.png";
+import customizedIphones from "../public/customized-iphones.png";
 
 export default function Home() {
   const NavBarSection = () => {
@@ -33,10 +35,10 @@ export default function Home() {
             placeholder="blur"
           />
         </div>
-        <h1 className="text-white p-6 text-2xl">
+        <div className="text-white p-6 text-2xl">
           Minimal / <br />
           Sleek /<br /> Private /
-        </h1>
+        </div>
         <div className="">
           <div className="text-center ">
             <Image
@@ -51,7 +53,7 @@ export default function Home() {
         </div>
         <div className="bg-white h-72 -mt-64 "></div>
         <div className=" w-full bg-white ">
-          <div className="text-2xl w-72 text-center m-auto  ">
+          <div className="text-2xl w-72 text-center m-auto pb-12 pt-6  ">
             Shadow. The cleanest podcast app.
           </div>
         </div>
@@ -68,6 +70,37 @@ export default function Home() {
       <main>
         <NavBarSection />
         <HeroSection />
+        <section className="bg-primary -p-72 ">
+          <div className="text-white text-left text-base m-auto w-72  pb-12 pt-12 sm:pt-8 md:pt-32 	">
+            <h1 className="font-semibold  "> Only Podcasts</h1>A specialized app
+            dedicated to podcasts, without any distractions.
+            <div className="mt-8">
+              <Image
+                src={ipadMockup}
+                alt="Shadow App Iphone"
+                quality={100}
+                width={250}
+                height={205.97}
+                placeholder="blur"
+              />
+            </div>
+          </div>
+
+          <div className="text-white text-left text-base m-auto w-72  pb-12 pt-12 sm:pt-8 pb-12 md:pt-32 	">
+            <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
+            the accent colors and choose between light and dark mode.
+            <div className="mt-8">
+              <Image
+                src={customizedIphones}
+                alt="Shadow App Iphone"
+                quality={100}
+                width={250}
+                height={217.44}
+                placeholder="blur"
+              />
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t"></footer>
