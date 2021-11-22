@@ -71,10 +71,10 @@ export default function Home() {
         <NavBarSection />
         <HeroSection />
         <section className="bg-primary -p-72 ">
-          <div className="text-white text-left text-base m-auto w-72  pb-12 pt-12 sm:pt-8 md:pt-32 	">
+          <div className="text-white text-left text-base m-auto w-72  pb-6 pt-24   	">
             <h1 className="font-semibold  "> Only Podcasts</h1>A specialized app
             dedicated to podcasts, without any distractions.
-            <div className="mt-8">
+            <div className="mt-12">
               <Image
                 src={ipadMockup}
                 alt="Shadow App Iphone"
@@ -86,10 +86,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-white text-left text-base m-auto w-72  pb-12 pt-12 sm:pt-8 pb-12 md:pt-32 	">
+          <div className="text-white text-left text-base m-auto w-72   pt-12 pb-24  	">
             <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
             the accent colors and choose between light and dark mode.
-            <div className="mt-8">
+            <div className="mt-12">
               <Image
                 src={customizedIphones}
                 alt="Shadow App Iphone"
