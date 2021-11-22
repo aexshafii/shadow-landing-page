@@ -5,14 +5,10 @@
 @layer base {
   h1 {
     border-style: solid;
-    border-width: 0 0 5px 0;
+    border-width: 0 0 3px 0;
     padding-bottom: 0px;
     margin-bottom: 20px;
     width: fit-content;
     border-image: linear-gradient(45deg, rgb(10, 132, 255), rgb(145, 6, 255)) 1;
   }
-}
-.underline {
-  text-decoration-color: red;
-  text-decoration: underline;
 }

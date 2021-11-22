@@ -5,7 +5,8 @@ import iphoneHero from "../public/iphone-hero.png";
 import appStore from "../public/app-store.png";
 import ipadMockup from "../public/ipad-mockup.png";
 import customizedIphones from "../public/customized-iphones.png";
-
+import shareplayLogo from "../public/shareplay-logo.png";
+import cloudSecurityIllustration from "../public/cloud-security.png";
 export default function Home() {
   const NavBarSection = () => {
     return (
@@ -60,6 +61,41 @@ export default function Home() {
       </section>
     );
   };
+  const MainFeaturesSection = () => {
+    return (
+      <section className="bg-primary -p-72  ">
+        <div className="text-white text-left text-base m-auto w-72  pb-6 pt-24   	">
+          <h1 className="font-semibold  "> Only Podcasts</h1>A specialized app
+          dedicated to podcasts, without any distractions.
+          <div className="mt-12 text-center">
+            <Image
+              src={ipadMockup}
+              alt="Ipad displaying Shadow app"
+              quality={100}
+              width={250}
+              height={205.97}
+              placeholder="blur"
+            />
+          </div>
+        </div>
+
+        <div className="text-white text-left text-base m-auto w-72   pt-12 pb-24  	">
+          <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
+          the accent colors and choose between light and dark mode.
+          <div className="mt-12 text-center">
+            <Image
+              src={customizedIphones}
+              alt="Colorful iphones showing color customization"
+              quality={100}
+              width={250}
+              height={217.44}
+              placeholder="blur"
+            />
+          </div>
+        </div>
+      </section>
+    );
+  };
   return (
     <div>
       <Head>
@@ -70,35 +106,39 @@ export default function Home() {
       <main>
         <NavBarSection />
         <HeroSection />
-        <section className="bg-primary -p-72 ">
-          <div className="text-white text-left text-base m-auto w-72  pb-6 pt-24   	">
-            <h1 className="font-semibold  "> Only Podcasts</h1>A specialized app
-            dedicated to podcasts, without any distractions.
-            <div className="mt-12">
-              <Image
-                src={ipadMockup}
-                alt="Shadow App Iphone"
-                quality={100}
-                width={250}
-                height={205.97}
-                placeholder="blur"
-              />
-            </div>
+        <MainFeaturesSection />
+        <section className="   ">
+          <div className=" text-center text-base m-auto  pt-24   	">
+            <Image
+              src={shareplayLogo}
+              alt="Colorful iphones showing color customization"
+              quality={100}
+              width={125}
+              height={125}
+              placeholder="blur"
+            />
+          </div>
+          <div className="font-semibold text-center m-auto pb-6  ">
+            Share Play
           </div>
 
-          <div className="text-white text-left text-base m-auto w-72   pt-12 pb-24  	">
-            <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
-            the accent colors and choose between light and dark mode.
-            <div className="mt-12">
-              <Image
-                src={customizedIphones}
-                alt="Shadow App Iphone"
-                quality={100}
-                width={250}
-                height={217.44}
-                placeholder="blur"
-              />
-            </div>
+          <div className="mb-12 w-48 m-auto">
+            Enjoy your favorite podcast with your favorite people on FaceTime.{" "}
+          </div>
+          <div className=" text-center text-base m-auto  pt-12   	">
+            <Image
+              src={cloudSecurityIllustration}
+              alt="Colorful iphones showing color customization"
+              quality={100}
+              width={180}
+              height={140}
+              placeholder="blur"
+            />
+          </div>
+          <div className="font-semibold text-center m-auto pb-6  ">Privacy</div>
+
+          <div className="mb-24 w-48 m-auto">
+            No third-party analytics, ad services, or tracking code.
           </div>
         </section>
       </main>
