@@ -20,16 +20,9 @@ export default function Home() {
       </section>
     );
   };
-  return (
-    <div className="">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
-      <main className="">
-        <NavBarSection></NavBarSection>
-      </main>
+  const HeroSection = () => {
+    return (
       <section className="bg-primary -p-72">
         <div className=" absolute top-10 right-6 w-36">
           <Image
@@ -56,8 +49,22 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="bg-white h-72 -mt-64 z-50"></div>
+        <div className="bg-white h-72 -mt-64"></div>
       </section>
+    );
+  };
+  return (
+    <div>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+        <NavBarSection />
+        <HeroSection />
+      </main>
+
       <footer className="flex items-center justify-center w-full h-24 border-t"></footer>
     </div>
   );
