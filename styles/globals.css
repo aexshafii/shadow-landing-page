@@ -11,4 +11,20 @@
     width: fit-content;
     border-image: linear-gradient(45deg, rgb(10, 132, 255), rgb(145, 6, 255)) 1;
   }
+  h2 {
+    background: -webkit-linear-gradient(rgb(10, 132, 255), rgb(145, 6, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.avatar {
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
