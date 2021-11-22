@@ -23,7 +23,7 @@ export default function Home() {
 
   const HeroSection = () => {
     return (
-      <section className="bg-primary -p-72">
+      <section className="bg-primary -p-72 ">
         <div className=" absolute top-10 right-6 w-36">
           <Image
             src={appStore}
@@ -38,7 +38,7 @@ export default function Home() {
           Sleek /<br /> Private /
         </h1>
         <div className="">
-          <div className="text-center">
+          <div className="text-center ">
             <Image
               src={iphoneHero}
               alt="Shadow App Iphone"
@@ -49,7 +49,12 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="bg-white h-72 -mt-64"></div>
+        <div className="bg-white h-72 -mt-64 "></div>
+        <div className=" w-full bg-white ">
+          <div className="text-2xl w-72 text-center m-auto  ">
+            Shadow. The cleanest podcast app.
+          </div>
+        </div>
       </section>
     );
   };
