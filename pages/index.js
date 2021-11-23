@@ -30,7 +30,7 @@ export default function Home() {
   const HeroSection = () => {
     return (
       <section className="bg-primary -p-72 ">
-        <div className="absolute top-10 pt-0 mt-0 right-6 w-36 bg-blue  sm:top-auto bottom-1/3 mb-16  right-3 md: right-8">
+        <div className="absolute top-10 pt-0 mt-0 right-6 w-36 bg-blue  sm:invisible">
           <Image
             src={appStore}
             alt="Apple Store Button"
@@ -42,6 +42,15 @@ export default function Home() {
         <div className="text-white p-6 text-2xl sm:absolute top-60 ">
           Minimal / <br />
           Sleek /<br /> Private /
+        </div>
+        <div className="invisible text-white p-6 text-2xl sm:visible absolute top-96 right-0 w-52 ">
+          <Image
+            src={appStore}
+            alt="Apple Store Button"
+            width={187.5}
+            height={62.6718}
+            placeholder="blur"
+          />
         </div>
         <div className="">
           <div className="text-center ">
