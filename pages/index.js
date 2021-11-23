@@ -39,34 +39,24 @@ export default function Home() {
             placeholder="blur"
           />
         </div>
-        <div className="text-white p-6 text-2xl sm:absolute top-60 ">
+        <div className="text-white p-6 text-2xl sm:absolute top-72 lg:mt-60 text-3xl ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
-        <div className="invisible text-white p-6 text-2xl sm:visible absolute top-96 right-0 w-52 ">
+        <div className="invisible text-white p-6 text-2xl sm:visible absolute top-72 mt-14 right-0 w-52 pl-10 lg:pt-96 w-72 pl-0 ">
           <Image
             src={appStore}
             alt="Apple Store Button"
-            width={187.5}
-            height={62.6718}
             placeholder="blur"
+            className="object-contain "
           />
         </div>
-        <div className="">
-          <div className="text-center ">
-            <Image
-              src={iphoneHero}
-              alt="Shadow App Iphone"
-              width={250}
-              height={504.58}
-              quality={100}
-              placeholder="blur"
-            />
-          </div>
+        <div className=" w-64 m-auto lg:w-96 pt-8">
+          <Image src={iphoneHero} quality={100} className="object-contain " />
         </div>
         <div className="bg-white h-72 -mt-64 "></div>
-        <div className=" w-full bg-white ">
-          <div className="text-2xl w-72 text-center m-auto pb-12 pt-6  ">
+        <div className=" w-full bg-white md: pb-4 pt-4 ">
+          <div className="text-2xl w-72 text-center m-auto pb-12 pt-6 font-bold   ">
             Shadow. The cleanest podcast app.
           </div>
         </div>
@@ -148,11 +138,11 @@ export default function Home() {
   };
   const FooterSection = () => {
     return (
-      <section className="bg-primary pt-24 text-white">
-        <div className="font-bold  text-2xl w-72 m-auto pb-24 ">
+      <section className="bg-primary pt-24 text-white w-full">
+        <div className="font-bold text-2xl  m-auto pb-24 w-full pl-12 pr-12  ">
           The easiest way to follow, download and listen to podcasts
         </div>
-        <div class="grid grid-cols-2 gap-4 pl-12 text-white  text-xl pb-16">
+        <div class="grid grid-cols-2 gap-4 pl-12 text-white  text-xl pb-16 ">
           <div>
             <h2 className="font-bold  w-42 m-auto  ">
               Scan to download Shadow
