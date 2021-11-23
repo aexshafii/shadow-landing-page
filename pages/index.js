@@ -66,31 +66,30 @@ export default function Home() {
   const MainFeaturesSection = () => {
     return (
       <section className="bg-primary -p-72  ">
-        <div className="text-white text-left text-base m-auto w-72  pb-6 pt-24   	">
-          <h1 className="font-semibold  "> Only Podcasts</h1>A specialized app
-          dedicated to podcasts, without any distractions.
-          <div className="mt-12 text-center">
+        <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
+          <div className="max-w-xs">
+            <h1 className="font-semibold  lg:mt-24   ">Only Podcasts</h1>A
+            specialized app dedicated to podcasts, without any distractions.
+          </div>
+          <div className="mt-12 text-center  lg:mt-0 lg:order-first	">
             <Image
               src={ipadMockup}
               alt="Ipad displaying Shadow app"
               quality={100}
-              width={250}
-              height={205.97}
               placeholder="blur"
             />
           </div>
         </div>
-
-        <div className="text-white text-left text-base m-auto w-72   pt-12 pb-24  	">
-          <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
-          the accent colors and choose between light and dark mode.
-          <div className="mt-12 text-center">
+        <div className="grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
+          <div className="max-w-xs lg:mt-24">
+            <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
+            the accent colors and choose between light and dark mode.
+          </div>
+          <div className="mt-12 text-center order-last lg:mt-0 lg:order-last lg:pb-16 ">
             <Image
               src={customizedIphones}
               alt="Colorful iphones showing color customization"
               quality={100}
-              width={250}
-              height={217.44}
               placeholder="blur"
             />
           </div>
@@ -101,7 +100,7 @@ export default function Home() {
   const ExtraFeaturesSection = () => {
     return (
       <section className="   ">
-        <div className=" text-center text-base m-auto  pt-24   	">
+        <div className=" text-center text-base m-auto pt-24">
           <Image
             src={shareplayLogo}
             alt="Apple share play logo"
@@ -111,12 +110,14 @@ export default function Home() {
             placeholder="blur"
           />
         </div>
-        <div className="font-semibold text-center m-auto pb-6  ">
-          Share Play
-        </div>
 
-        <div className="mb-12 w-52 m-auto">
-          Enjoy your favorite podcast with your favorite people on FaceTime.{" "}
+        <div>
+          <div className="font-semibold text-center m-auto pb-6  ">
+            Share Play
+          </div>
+          <div className="mb-12 w-52 m-auto">
+            Enjoy your favorite podcast with your favorite people on FaceTime.
+          </div>
         </div>
         <div className=" text-center text-base m-auto  pt-12   	">
           <Image
