@@ -139,7 +139,7 @@ export default function Home() {
                 Privacy
               </div>
 
-              <div className="mb-24 w-56 m-auto">
+              <div className="mb-24 w-56 m-auto text-left">
                 No third-party analytics, ad services, or tracking code.
               </div>
             </div>
@@ -151,54 +151,78 @@ export default function Home() {
   const FooterSection = () => {
     return (
       <section className="bg-primary pt-24 text-white w-full">
-        <div className="font-bold text-xl  m-auto pb-24 w-full pl-12 pr-12  ">
-          The easiest way to follow, download and listen to podcasts
-        </div>
-        <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          {/* colum 1 */}
           <div>
-            <h2 className="font-bold  w-42 m-auto  sm:pt-6  ">
-              Scan to download Shadow
-            </h2>
-            →
+            <div className="font-bold text-xl  m-auto pb-24 w-full pl-12 pr-12 lg:w-96 m-0 ">
+              The easiest way to follow, download and listen to podcasts
+            </div>
+            <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 lg:w-96 ">
+              <div>
+                <h2 className="font-bold  w-42 m-auto  sm:pt-6  ">
+                  Scan to download Shadow
+                </h2>
+                →
+              </div>
+              <div>
+                <Image
+                  src={qrCode}
+                  alt="qr code to download shadow app on apple app store"
+                  quality={100}
+                  placeholder="blur"
+                  className="transform scale-100 md:scale-75 lg:scale-50"
+                />
+              </div>
+            </div>
           </div>
+          {/* colum 2 */}
           <div>
-            <Image
-              src={qrCode}
-              alt="qr code to download shadow app on apple app store"
-              quality={100}
-              placeholder="blur"
-              className="transform scale-100 md:scale-75 lg:scale-50"
-            />
+            <div className="grid grid-cols-2 lg:grid-cols-1">
+              <div>
+                <div className=" pl-12 pb-12 font-normal">Available for</div>
+                <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
+                <h1 className="ml-12 font-normal text-3xl"> iPad</h1>
+              </div>
+              <div className=" text-center animate-bounce mt-20 sm:mr-24 lg:invisible	">
+                <Image
+                  src={airPod}
+                  alt="qr code to download shadow app on apple app store"
+                  quality={100}
+                  placeholder="blur"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="flex">
+          {/* colum 3 */}
           <div>
-            <div className="m-auto pl-12 pb-12 font-normal">Available for</div>
-            <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
-            <h1 className="ml-12 font-normal text-3xl"> iPad</h1>
+            <div className=" lg:flex-col	">
+              <div className="">
+                <div className="invisible text-center animate-bounce -mt-36  sm:mr-24 lg:visible lg:mt-0	">
+                  <Image
+                    src={airPod}
+                    alt="qr code to download shadow app on apple app store"
+                    quality={100}
+                    placeholder="blur"
+                  />
+                </div>
+                <div className="grid grid-cols-3 gap-0 pl-8 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-4">
+                  <div className="w-24 pt-4">
+                    <Image
+                      src={logo}
+                      alt="Shadow Logo"
+                      width={120}
+                      height={120}
+                      placeholder="blur"
+                    />
+                  </div>
+                  <div className="text-3xl pt-12 pb-24 mr-24 lg:pr-64">
+                    Shadow
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="m-auto text-center pt-12 animate-bounce">
-            <Image
-              src={airPod}
-              alt="qr code to download shadow app on apple app store"
-              quality={100}
-              width={300}
-              height={150}
-              placeholder="blur"
-            />
-          </div>
-        </div>
-        <div className="flex pt-12">
-          <div className="ml-8 w-24 pt-4">
-            <Image
-              src={logo}
-              alt="Shadow Logo"
-              width={120}
-              height={120}
-              placeholder="blur"
-            />
-          </div>
-          <div className="text-3xl pt-12 pb-24">Shadow</div>
         </div>
       </section>
     );
