@@ -43,7 +43,7 @@ export default function Home() {
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
-        <div className="invisible text-white p-6 text-2xl sm:visible absolute top-72 mt-14 right-0 w-52 pl-10 lg:pt-96 w-72 pl-0 ">
+        <div className="invisible text-white p-6 text-2xl sm:visible absolute top-72 mt-14 right-0 w-52 pl-10 sm:w-32 lg:pt-96 w-72 pl-0 ">
           <Image
             src={appStore}
             alt="Apple Store Button"
@@ -65,7 +65,7 @@ export default function Home() {
   };
   const MainFeaturesSection = () => {
     return (
-      <section className="bg-primary -p-72  ">
+      <section className="bg-primary -p-72 pb-16  ">
         <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs">
             <h1 className="font-semibold  lg:mt-24   ">Only Podcasts</h1>A
@@ -99,8 +99,8 @@ export default function Home() {
   };
   const ExtraFeaturesSection = () => {
     return (
-      <section className="   ">
-        <div className=" text-center text-base m-auto pt-24">
+      <section className="">
+        <div className="text-center flex text-base m-auto pt-24">
           <Image
             src={shareplayLogo}
             alt="Apple share play logo"
@@ -110,16 +110,15 @@ export default function Home() {
             placeholder="blur"
           />
         </div>
-
         <div>
-          <div className="font-semibold text-center m-auto pb-6  ">
+          <div className="font-semibold text-center m-auto pb-6">
             Share Play
           </div>
           <div className="mb-12 w-52 m-auto">
             Enjoy your favorite podcast with your favorite people on FaceTime.
           </div>
         </div>
-        <div className=" text-center text-base m-auto  pt-12   	">
+        <div className=" text-center text-base m-auto  pt-12">
           <Image
             src={cloudSecurityIllustration}
             alt="cloud security 3d illustration"
@@ -140,12 +139,12 @@ export default function Home() {
   const FooterSection = () => {
     return (
       <section className="bg-primary pt-24 text-white w-full">
-        <div className="font-bold text-2xl  m-auto pb-24 w-full pl-12 pr-12  ">
+        <div className="font-bold text-xl  m-auto pb-24 w-full pl-12 pr-12  ">
           The easiest way to follow, download and listen to podcasts
         </div>
-        <div class="grid grid-cols-2 gap-4 pl-12 text-white  text-xl pb-16 ">
+        <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 ">
           <div>
-            <h2 className="font-bold  w-42 m-auto  ">
+            <h2 className="font-bold  w-42 m-auto  sm:pt-6  ">
               Scan to download Shadow
             </h2>
             →
@@ -155,9 +154,8 @@ export default function Home() {
               src={qrCode}
               alt="qr code to download shadow app on apple app store"
               quality={100}
-              width={100}
-              height={100}
               placeholder="blur"
+              className="transform scale-100 md:scale-75 lg:scale-50"
             />
           </div>
         </div>
