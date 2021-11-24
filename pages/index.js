@@ -100,38 +100,50 @@ export default function Home() {
   const ExtraFeaturesSection = () => {
     return (
       <section className="">
-        <div className="text-center flex text-base m-auto pt-24">
-          <Image
-            src={shareplayLogo}
-            alt="Apple share play logo"
-            quality={100}
-            width={125}
-            height={125}
-            placeholder="blur"
-          />
-        </div>
-        <div>
-          <div className="font-semibold text-center m-auto pb-6">
-            Share Play
+        <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-0">
+          <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-24 lg:pb-24">
+            <div>
+              <Image
+                src={shareplayLogo}
+                alt="Apple share play logo"
+                quality={100}
+                width={125}
+                height={125}
+                placeholder="blur"
+              />
+            </div>
+            <div>
+              <div className="font-semibold text-center m-auto pb-6 lg:text-left ">
+                Share Play
+              </div>
+              <div className="mb-12 w-52 m-auto text-left">
+                Enjoy your favorite podcast with your favorite people on
+                FaceTime.
+              </div>
+            </div>
           </div>
-          <div className="mb-12 w-52 m-auto">
-            Enjoy your favorite podcast with your favorite people on FaceTime.
-          </div>
-        </div>
-        <div className=" text-center text-base m-auto  pt-12">
-          <Image
-            src={cloudSecurityIllustration}
-            alt="cloud security 3d illustration"
-            quality={100}
-            width={180}
-            height={140}
-            placeholder="blur"
-          />
-        </div>
-        <div className="font-semibold text-center m-auto pb-6  ">Privacy</div>
 
-        <div className="mb-24 w-56 m-auto">
-          No third-party analytics, ad services, or tracking code.
+          <div className="text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-24 lg:pb-24">
+            <div>
+              <Image
+                src={cloudSecurityIllustration}
+                alt="cloud security 3d illustration"
+                quality={100}
+                width={180}
+                height={140}
+                placeholder="blur"
+              />
+            </div>
+            <div>
+              <div className="font-semibold text-center m-auto pb-6 lg:text-left  ">
+                Privacy
+              </div>
+
+              <div className="mb-24 w-56 m-auto">
+                No third-party analytics, ad services, or tracking code.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     );
