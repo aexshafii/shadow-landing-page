@@ -158,12 +158,12 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {/* colum 1 */}
           <div>
-            <div className="font-bold text-xl m-auto pb-24 w-full pl-12 pr-12 sm:text-3xl sm:w-auto lg:w-96 m-0 ">
+            <div className="font-bold text-xl m-auto pb-24 w-full pl-12 pr-12 sm:text-3xl sm:w-auto lg:text-2xl lg:w-96 m-0 ">
               The easiest way to follow, download and listen to podcasts
             </div>
             <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 lg:w-96 ">
               <div>
-                <h2 className="font-bold text-lg  w-42 m-auto sm:m-0  sm:pt-6 sm:w-52 sm:text-3xl  ">
+                <h2 className="font-bold text-lg  w-42 m-auto sm:m-0  sm:pt-6 sm:w-52 sm:text-3xl lg:text-2xl  ">
                   Scan to download Shadow
                 </h2>
                 →
@@ -174,7 +174,7 @@ export default function Home() {
                   alt="qr code to download shadow app on apple app store"
                   quality={100}
                   placeholder="blur"
-                  className="transform scale-100  sm:scale-75 lg:scale-50"
+                  className="transform scale-100  sm:scale-75 lg:scale-75"
                 />
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Home() {
           <div>
             <div className="grid grid-cols-2 lg:grid-cols-1">
               <div>
-                <div className=" pl-12 pb-12 font-normal text-lg font-light">
+                <div className=" pl-12 pb-12 font-normal text-lg font-light lg:text-xl">
                   Available for
                 </div>
                 <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
