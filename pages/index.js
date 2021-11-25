@@ -39,11 +39,11 @@ export default function Home() {
             placeholder="blur"
           />
         </div> */}
-        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-60  ">
+        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-64 lg:pt-8  ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
-        <div className="transform w-36 absolute top-10 right-4 sm: sm:mt-96 sm:pt-6   ">
+        <div className="transform w-36 absolute top-10 right-4 sm:mt-96 sm:pt-6 lg:pt-96 lg:mt-72 lg:w-48 lg:mr-4  ">
           <Image
             src={appStore}
             alt="Apple Store Button"
@@ -103,7 +103,7 @@ export default function Home() {
   };
   const ExtraFeaturesSection = () => {
     return (
-      <section className="">
+      <section>
         <div className="  text-center text-base m-auto  lg:grid grid-cols-2 lg:pt-0">
           <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-24 lg:pb-24">
             <div>
@@ -143,7 +143,7 @@ export default function Home() {
                 Privacy
               </div>
 
-              <div className="mb-24 w-56 m-auto text-left">
+              <div className="mb-28 w-56 m-auto text-left">
                 No third-party analytics, ad services, or tracking code.
               </div>
             </div>
