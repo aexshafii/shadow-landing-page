@@ -30,7 +30,7 @@ export default function Home() {
   const HeroSection = () => {
     return (
       <section className="bg-primary -p-72 ">
-        <div className="absolute top-10 pt-0 mt-0 right-6 w-36 bg-blue  sm:invisible">
+        {/* <div className="absolute top-10 pt-0 mt-0 right-6 w-36 bg-blue  sm:invisible">
           <Image
             src={appStore}
             alt="Apple Store Button"
@@ -38,12 +38,12 @@ export default function Home() {
             height={62.6718}
             placeholder="blur"
           />
-        </div>
-        <div className="text-white p-6 text-2xl sm:absolute top-72 lg:mt-60  ">
+        </div> */}
+        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-60  ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
-        <div className="invisible text-white p-6 text-2xl sm:visible absolute top-72 mt-14 right-0 w-52 pl-10 sm:w-32 lg:pt-96 w-72 pl-0 ">
+        <div className="transform w-36 absolute top-10 right-4 sm: sm:mt-96 sm:pt-6   ">
           <Image
             src={appStore}
             alt="Apple Store Button"
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="bg-white h-72 -mt-64 "></div>
         <div className=" w-full bg-white md: pb-4 pt-4 ">
-          <div className="text-2xl w-auto text-center m-auto pb-12 pt-6  ">
+          <div className="text-2xl w-72  text-center m-auto pb-12 pt-6 sm:text-3xl sm:w-96 ">
             Shadow. The cleanest podcast app.
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
       <section className="bg-primary -p-72 pb-16  ">
         <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs">
-            <h1 className="font-semibold  lg:mt-24   ">Only Podcasts</h1>
+            <h1 className="font-bold sm:text-lg  lg:mt-24   ">Only Podcasts</h1>
             <div className="mt-6">
               A specialized app dedicated to podcasts, without any distractions.
             </div>
@@ -84,7 +84,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs lg:mt-24">
-            <h1 className="font-semibold  "> Customizeable Appearance</h1>
+            <h1 className="font-bold  "> Customizeable Appearance</h1>
             <div className="mt-6">
               Change the accent colors and choose between light and dark mode.
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="font-semibold text-center m-auto pb-6 lg:text-left ">
+              <div className="font-bold text-center m-auto pb-6 pt-4 lg:text-left ">
                 Share Play
               </div>
               <div className="mb-12 w-52 m-auto text-left">
@@ -139,7 +139,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="font-semibold text-center m-auto pb-6 lg:text-left  ">
+              <div className="font-bold text-center m-auto pb-6 lg:text-left  ">
                 Privacy
               </div>
 
@@ -158,12 +158,12 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {/* colum 1 */}
           <div>
-            <div className="font-bold text-xl  m-auto pb-24 w-full pl-12 pr-12 lg:w-96 m-0 ">
+            <div className="font-bold text-xl m-auto pb-24 w-full pl-12 pr-12 sm:text-3xl sm:w-auto lg:w-96 m-0 ">
               The easiest way to follow, download and listen to podcasts
             </div>
             <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 lg:w-96 ">
               <div>
-                <h2 className="font-bold text-lg  w-42 m-auto  sm:pt-6  ">
+                <h2 className="font-bold text-lg  w-42 m-auto sm:m-0  sm:pt-6 sm:w-52 sm:text-3xl  ">
                   Scan to download Shadow
                 </h2>
                 →
@@ -174,7 +174,7 @@ export default function Home() {
                   alt="qr code to download shadow app on apple app store"
                   quality={100}
                   placeholder="blur"
-                  className="transform scale-100 md:scale-75 lg:scale-50"
+                  className="transform scale-100  sm:scale-75 lg:scale-50"
                 />
               </div>
             </div>
