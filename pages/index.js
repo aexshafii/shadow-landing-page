@@ -39,7 +39,7 @@ export default function Home() {
             placeholder="blur"
           />
         </div>
-        <div className="text-white p-6 text-3xl sm:absolute top-72 lg:mt-60  ">
+        <div className="text-white p-6 text-2xl sm:absolute top-72 lg:mt-60  ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="bg-white h-72 -mt-64 "></div>
         <div className=" w-full bg-white md: pb-4 pt-4 ">
-          <div className="text-3xl w-auto text-center m-auto pb-12 pt-6  ">
+          <div className="text-2xl w-auto text-center m-auto pb-12 pt-6  ">
             Shadow. The cleanest podcast app.
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function Home() {
           <div>
             <div className="grid grid-cols-2 lg:grid-cols-1">
               <div>
-                <div className=" pl-12 pb-12 font-normal text-lg">
+                <div className=" pl-12 pb-12 font-normal text-lg font-light">
                   Available for
                 </div>
                 <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
