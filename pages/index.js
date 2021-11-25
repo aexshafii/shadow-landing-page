@@ -39,7 +39,7 @@ export default function Home() {
             placeholder="blur"
           />
         </div>
-        <div className="text-white p-6 text-2xl sm:absolute top-72 lg:mt-60 text-3xl ">
+        <div className="text-white p-6 text-3xl sm:absolute top-72 lg:mt-60  ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
         <div className="bg-white h-72 -mt-64 "></div>
         <div className=" w-full bg-white md: pb-4 pt-4 ">
-          <div className="text-2xl w-72 text-center m-auto pb-12 pt-6 font-bold   ">
+          <div className="text-3xl w-auto text-center m-auto pb-12 pt-6  ">
             Shadow. The cleanest podcast app.
           </div>
         </div>
@@ -68,8 +68,10 @@ export default function Home() {
       <section className="bg-primary -p-72 pb-16  ">
         <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs">
-            <h1 className="font-semibold  lg:mt-24   ">Only Podcasts</h1>A
-            specialized app dedicated to podcasts, without any distractions.
+            <h1 className="font-semibold  lg:mt-24   ">Only Podcasts</h1>
+            <div className="mt-6">
+              A specialized app dedicated to podcasts, without any distractions.
+            </div>
           </div>
           <div className="mt-12 text-center  lg:mt-0 lg:order-first	">
             <Image
@@ -82,8 +84,10 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs lg:mt-24">
-            <h1 className="font-semibold  "> Customizeable Appearance</h1>Change
-            the accent colors and choose between light and dark mode.
+            <h1 className="font-semibold  "> Customizeable Appearance</h1>
+            <div className="mt-6">
+              Change the accent colors and choose between light and dark mode.
+            </div>
           </div>
           <div className="mt-12 text-center order-last lg:mt-0 lg:order-last lg:pb-16 ">
             <Image
@@ -100,7 +104,7 @@ export default function Home() {
   const ExtraFeaturesSection = () => {
     return (
       <section className="">
-        <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-0">
+        <div className="  text-center text-base m-auto  lg:grid grid-cols-2 lg:pt-0">
           <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-24 lg:pb-24">
             <div>
               <Image
@@ -159,7 +163,7 @@ export default function Home() {
             </div>
             <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 lg:w-96 ">
               <div>
-                <h2 className="font-bold  w-42 m-auto  sm:pt-6  ">
+                <h2 className="font-bold text-lg  w-42 m-auto  sm:pt-6  ">
                   Scan to download Shadow
                 </h2>
                 →
@@ -179,7 +183,9 @@ export default function Home() {
           <div>
             <div className="grid grid-cols-2 lg:grid-cols-1">
               <div>
-                <div className=" pl-12 pb-12 font-normal">Available for</div>
+                <div className=" pl-12 pb-12 font-normal text-lg">
+                  Available for
+                </div>
                 <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
                 <h1 className="ml-12 font-normal text-3xl"> iPad</h1>
               </div>
@@ -215,7 +221,7 @@ export default function Home() {
                       placeholder="blur"
                     />
                   </div>
-                  <div className="text-3xl pt-12 pb-24 mr-24 lg:pr-64">
+                  <div className="text-3xl pt-12 pb-24 pm-36 lg:pr-64">
                     Shadow
                   </div>
                   <div></div>
