@@ -68,8 +68,10 @@ export default function Home() {
       <section className="bg-primary -p-72 pb-16  ">
         <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs">
-            <h1 className="font-bold sm:text-lg  lg:mt-24   ">Podcasts only</h1>
-            <div className="mt-6">
+            <h1 className="font-bold sm:text-lg  lg:text-xl  ">
+              Podcasts only
+            </h1>
+            <div className="mt-6 lg:text-lg">
               Shadow is an app that is purely dedicated to podcasts. It was
               carefully designed to remove any distractions for you to focus on
               one thing at a time.
@@ -86,8 +88,11 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs lg:mt-24">
-            <h1 className="font-bold  "> Customizeable Appearance</h1>
-            <div className="mt-6">
+            <h1 className="font-bold sm:text-lg lg:text-xl     ">
+              {" "}
+              Customizeable Appearance
+            </h1>
+            <div className="mt-6 lg:text-lg">
               Make the app look the way you want it to look. Change the accent
               colors and choose between light and dark mode for an experience
               that suits your taste.
@@ -108,7 +113,7 @@ export default function Home() {
   const ExtraFeaturesSection = () => {
     return (
       <section>
-        <div className="  text-center text-base m-auto  lg:grid grid-cols-2 lg:pt-0">
+        <div className="  text-center text-base m-auto  lg:grid grid-cols-2 lg:pt-0 lg:pr-32">
           <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-24 lg:pb-24">
             <div>
               <Image
@@ -121,18 +126,18 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="font-bold text-center m-auto pb-6 pt-4 lg:text-left ">
+              <div className="font-bold text-center m-auto pb-6  pt-4 lg:text-left lg:pt-2 lg:-ml-8 lg:text-lg ">
                 Share Play
               </div>
-              <div className="mb-12 w-52 m-auto text-left">
-                Enjoy your favorite podcast with your favorite people on
-                FaceTime.
+              <div className="mb-12 w-52 m-auto text-left lg:w-96 lg:-ml-8 lg:text-lg">
+                Enjoy iOS 15's latest feature. Listen to podcasts with your
+                friends and family via FaceTime.
               </div>
             </div>
           </div>
 
-          <div className="text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-24 lg:pb-24">
-            <div>
+          <div className="  text-center text-base m-auto pt-24 lg:grid grid-cols-2 lg:pt-28 lg:pb-24">
+            <div className="mt-20">
               <Image
                 src={cloudSecurityIllustration}
                 alt="cloud security 3d illustration"
@@ -143,12 +148,14 @@ export default function Home() {
               />
             </div>
             <div>
-              <div className="font-bold text-center m-auto pb-6 lg:text-left  ">
-                Privacy
+              <div className="font-bold text-center m-auto pb-6 pt-4 lg:text-left lg:mt-20 lg:text-lg">
+                Private
               </div>
 
-              <div className="mb-28 w-56 m-auto text-left">
-                No third-party analytics, ad services, or tracking code.
+              <div className="mb-28 w-56 m-auto text-left lg:w-96 lg:text-lg">
+                We value your privacy. No third-party analytics, ad services, or
+                tracking code. Listen to any podcast you like without the world
+                knowing about it.
               </div>
             </div>
           </div>
