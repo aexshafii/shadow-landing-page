@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import logo from "../public/logo.png";
+import logo from "../public/shadow-logo.png";
 import iphoneHero from "../public/iphone-hero.png";
 import appStore from "../public/app-store.png";
 import ipadMockup from "../public/ipad-mockup.png";
@@ -68,9 +68,11 @@ export default function Home() {
       <section className="bg-primary -p-72 pb-16  ">
         <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs">
-            <h1 className="font-bold sm:text-lg  lg:mt-24   ">Only Podcasts</h1>
+            <h1 className="font-bold sm:text-lg  lg:mt-24   ">Podcasts only</h1>
             <div className="mt-6">
-              A specialized app dedicated to podcasts, without any distractions.
+              Shadow is an app that is purely dedicated to podcasts. It was
+              carefully designed to remove any distractions for you to focus on
+              one thing at a time.
             </div>
           </div>
           <div className="mt-12 text-center  lg:mt-0 lg:order-first	">
@@ -86,7 +88,9 @@ export default function Home() {
           <div className="max-w-xs lg:mt-24">
             <h1 className="font-bold  "> Customizeable Appearance</h1>
             <div className="mt-6">
-              Change the accent colors and choose between light and dark mode.
+              Make the app look the way you want it to look. Change the accent
+              colors and choose between light and dark mode for an experience
+              that suits your taste.
             </div>
           </div>
           <div className="mt-12 text-center order-last lg:mt-0 lg:order-last lg:pb-16 ">
@@ -186,8 +190,11 @@ export default function Home() {
                 <div className=" pl-12 pb-12 font-normal text-lg font-light lg:text-xl">
                   Available for
                 </div>
-                <h1 className=" ml-12 font-normal text-3xl"> iPhone</h1>
-                <h1 className="ml-12 font-normal text-3xl"> iPad</h1>
+                <h1 className=" ml-12 font-normal text-3xl leading-10	">
+                  {" "}
+                  iPhone
+                </h1>
+                <h1 className="ml-12 font-normal text-3xl leading-10	"> iPad</h1>
               </div>
               <div className=" text-center animate-bounce mt-20 sm:mr-24 lg:invisible	">
                 <Image
