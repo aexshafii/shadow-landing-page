@@ -174,7 +174,7 @@ export default function Home() {
                   alt="qr code to download shadow app on apple app store"
                   quality={100}
                   placeholder="blur"
-                  className="transform scale-100  sm:scale-75 lg:scale-75"
+                  className="transform scale-100  sm:scale-75 md:scale-50  lg:scale-75"
                 />
               </div>
             </div>

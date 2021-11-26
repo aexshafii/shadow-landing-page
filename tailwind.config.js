@@ -10,7 +10,7 @@ module.exports = {
     },
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      primary: "#1A1A1A",
+      primary: "#181818",
     }),
   },
 
