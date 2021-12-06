@@ -39,7 +39,7 @@ export default function Home() {
             placeholder="blur"
           />
         </div> */}
-        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-64 lg:pt-8  ">
+        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-56 lg:pt-8 lg:text-5xl  ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
@@ -48,16 +48,16 @@ export default function Home() {
             src={appStore}
             alt="Apple Store Button"
             placeholder="blur"
-            className="object-contain "
+            className="object-contain"
           />
         </div>
         <div className=" w-64 m-auto lg:w-96 pt-8">
-          <Image src={iphoneHero} quality={100} className="object-contain " />
+          <Image src={iphoneHero} quality={100} className="object-contain" />
         </div>
-        <div className="bg-white h-72 -mt-64 "></div>
-        <div className=" w-full bg-white md: pb-4 pt-4 ">
-          <div className="text-2xl w-72  text-center m-auto pb-12 pt-6 sm:text-3xl sm:w-96 ">
-            Shadow. The cleanest podcast app.
+        <div className="bg-white h-72 -mt-64"></div>
+        <div className=" w-full bg-white md: pb-4 pt-4 pb-12">
+          <div className="text-2xl w-72  text-center m-auto pb-12 pt-6 sm:text-3xl sm:w-96 lg:text-5xl lg:w-1/2 lg:font-bold lg:leading-normal">
+            Shadow. The Cleanest Podcast App.
           </div>
         </div>
       </section>
@@ -65,13 +65,13 @@ export default function Home() {
   };
   const MainFeaturesSection = () => {
     return (
-      <section className="bg-primary -p-72 pb-16  ">
-        <div className=" grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
+      <section className="bg-primary -p-72 pb-16">
+        <div className="grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs">
-            <h1 className="font-bold sm:text-lg  lg:text-xl  ">
+            <h1 className="font-bold sm:text-lg  lg:text-xl lg:mt-20">
               Podcasts only
             </h1>
-            <div className="mt-6 lg:text-lg">
+            <div className="mt-6 lg:text-lg lg:w-96">
               Shadow is an app that is purely dedicated to podcasts. It was
               carefully designed to remove any distractions for you to focus on
               one thing at a time.
@@ -88,11 +88,10 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 text-white text-left text-base m-auto w-72 pb-6 pt-24 lg:grid-cols-2 lg:gap-48 lg:w-11/12   	">
           <div className="max-w-xs lg:mt-24">
-            <h1 className="font-bold sm:text-lg lg:text-xl     ">
-              {" "}
+            <h1 className="font-bold sm:text-lg lg:text-xl lg:pt-20    ">
               Customizeable Appearance
             </h1>
-            <div className="mt-6 lg:text-lg">
+            <div className="mt-6 lg:text-lg lg:w-96">
               Make the app look the way you want it to look. Change the accent
               colors and choose between light and dark mode for an experience
               that suits your taste.
