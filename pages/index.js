@@ -258,6 +258,68 @@ export default function Home() {
         <HeroSection />
         <MainFeaturesSection />
         <ExtraFeaturesSection />
+        <div class="w-6/12 mx-auto mt-8 text-oscuro">
+          <div class="flex flex-col justify-center w-full">
+            <h3 class="mb-8 text-center">
+              <span class="text-3xl sm:text-3xl lg:text-4xl leading-titles font-bold w-full sm:w-6/12 lg:w-full lg:text-black lg:text-center">
+                FAQ{" "}
+              </span>
+            </h3>
+            <div>
+              <div class="relative mb-4">
+                <input type="checkbox" id="toggle1" class="toggle hidden" />
+                <label
+                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  for="toggle1"
+                >
+                  Título 1
+                </label>
+                <div class="content bg-primary overflow-hidden">
+                  <p class="p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                </div>
+              </div>
+              <div class="relative mb-4">
+                <input type="checkbox" id="toggle2" class="toggle hidden" />
+                <label
+                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  for="toggle2"
+                >
+                  Título 2
+                </label>
+                <div class="content bg-primary overflow-hidden">
+                  <p class="p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                </div>
+              </div>
+              <div class="relative mb-4">
+                <input type="checkbox" id="toggle3" class="toggle hidden" />
+                <label
+                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  for="toggle3"
+                >
+                  Título 3
+                </label>
+                <div class="content bg-primary overflow-hidden">
+                  <p class="p-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <footer className="flex items-center justify-center w-full ">
           <FooterSection />
         </footer>
