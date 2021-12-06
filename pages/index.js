@@ -262,7 +262,7 @@ export default function Home() {
           <div class="flex flex-col justify-center w-full">
             <h3 class="mb-8 text-center">
               <span class="text-3xl sm:text-3xl lg:text-4xl leading-titles font-bold w-full sm:w-6/12 lg:w-full lg:text-black lg:text-center">
-                FAQ{" "}
+                FAQ
               </span>
             </h3>
             <div>
@@ -272,14 +272,15 @@ export default function Home() {
                   class="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle1"
                 >
-                  Título 1
+                  Why should I use Shadow when I have Spotify or Apple Music?
                 </label>
                 <div class="content bg-primary overflow-hidden">
                   <p class="p-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    You probably use those apps for music already. It can be
+                    easy to get distracted between the countless artists,
+                    albums, and songs that you're listening on there. And let's
+                    get real, these apps are not optimized for podcasts. Shadow
+                    is.
                   </p>
                 </div>
               </div>
@@ -289,14 +290,17 @@ export default function Home() {
                   class="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle2"
                 >
-                  Título 2
+                  How can I listen to podcasts with my family and friends using
+                  Shadow?
                 </label>
                 <div class="content bg-primary overflow-hidden">
                   <p class="p-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    1. Start a FaceTime call.
+                    <br /> 2. Go to the Home Screen, then open Shadow. <br />
+                    3. Select a the podcast you want to watch, tap the Play
+                    button, then select Play for Everyone (if it appears) to
+                    begin watching with everyone on the call. The podcast will
+                    then start playing for everyone at the same time.
                   </p>
                 </div>
               </div>
@@ -306,14 +310,14 @@ export default function Home() {
                   class="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle3"
                 >
-                  Título 3
+                  Is Shadow free?
                 </label>
                 <div class="content bg-primary overflow-hidden">
                   <p class="p-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat
+                    We do offer Shadow for free. However, you can also get
+                    Shadow+, which will give you more customization options and
+                    extra features. You can get the monthly plan for only $1.49
+                    per month and an annual plan for $14.49.
                   </p>
                 </div>
               </div>
