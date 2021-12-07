@@ -258,7 +258,7 @@ export default function Home() {
         <HeroSection />
         <MainFeaturesSection />
         <ExtraFeaturesSection />
-        <div class="w-6/12 mx-auto mt-8 text-oscuro">
+        <div class="w-6/12 mx-auto  text-oscuro pb-36">
           <div class="flex flex-col justify-center w-full">
             <h3 class="mb-8 text-center">
               <span class="text-3xl sm:text-3xl lg:text-4xl leading-titles font-bold w-full sm:w-6/12 lg:w-full lg:text-black lg:text-center">
@@ -309,6 +309,21 @@ export default function Home() {
                 <label
                   class="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle3"
+                >
+                  Is Shadow available on Android?
+                </label>
+                <div class="content bg-primary overflow-hidden">
+                  <p class="p-4">
+                    Unfortunately not. The app is currently only available on
+                    iPhones and iPads with iOS 14 or iPadOS 14 and higher.
+                  </p>
+                </div>
+              </div>
+              <div class="relative mb-4">
+                <input type="checkbox" id="toggle4" class="toggle hidden" />
+                <label
+                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  for="toggle4"
                 >
                   Is Shadow free?
                 </label>
