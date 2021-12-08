@@ -42,7 +42,7 @@ export default function Home() {
             placeholder="blur"
           />
         </div> */}
-        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-56 lg:pt-8 lg:text-5xl  ">
+        <div className="text-white p-6 text-2xl sm:absolute sm:top-64 sm:text-3xl sm:mt-4 lg:mt-64 lg:pt-8 lg:text-4xl  ">
           Minimal / <br />
           Sleek /<br /> Private /
         </div>
