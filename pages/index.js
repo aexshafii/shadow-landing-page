@@ -9,6 +9,9 @@ import shareplayLogo from "../public/shareplay-logo.png";
 import cloudSecurityIllustration from "../public/cloud-security.png";
 import qrCode from "../public/qr.png";
 import airPod from "../public/airpod.png";
+import rui from "../public/rui.png";
+import dana from "../public/dana.png";
+import gary from "../public/gary.png";
 
 export default function Home() {
   const NavBarSection = () => {
@@ -171,7 +174,7 @@ export default function Home() {
             <div className="font-bold text-xl m-auto pb-24 w-full pl-12 pr-12 sm:text-3xl sm:w-auto lg:text-2xl lg:w-96 m-0 ">
               The easiest way to follow, download and listen to podcasts
             </div>
-            <div class="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 lg:w-96 ">
+            <div className="grid grid-cols-2 gap-4 pl-12 text-white  sm:text-3xl pb-16 w-10/12 lg:w-96 ">
               <div>
                 <h2 className="font-bold text-lg  w-42 m-auto sm:m-0  sm:pt-6 sm:w-52 sm:text-3xl lg:text-2xl  ">
                   Scan to download Shadow
@@ -256,26 +259,73 @@ export default function Home() {
       <main>
         <NavBarSection />
         <HeroSection />
+        <div className="grid grid-cols-12 gap-12  p-36  mb-24">
+          <div className="border-solid border-2 border-black text-xl p-6 col-span-4 w-72 h-72">
+            <div className="relative -top-48 -left-36 ">
+              <Image
+                src={rui}
+                alt="Gary portrait"
+                placeholder="blur"
+                className="scale-50 border-2"
+              />
+            </div>
+            <div className="relative -top-64 ">
+              “On Spotify, I’ve found myself being frustrated with how many
+              features are unintuitive or clunky” <br />
+              <br />
+              <div className="text-base">- Gary Richards, Indie Hacker</div>
+            </div>
+          </div>
+          <div className="border-solid border-2 border-black text-xl p-6 col-span-4 w-72 h-72">
+            “This is the best podcast app I’ve used. I love how I can customize
+            how it looks.”
+            <br />
+            <br />
+            <div className="text-base">- Dana Tentis, Photographer</div>
+            <div className="relative -top-10 left-36 ">
+              <Image
+                src={dana}
+                alt="Gary portrait"
+                placeholder="blur"
+                className="scale-50 border-2"
+              />
+            </div>
+          </div>
+          <div className="border-solid border-2 border-black text-xl p-6 col-span-4 w-72 h-72">
+            “I'm so happy I finally found beautifully designed, minimalist
+            podcast app”
+            <br />
+            <br /> <div className="text-base">- Rui Silvestre, Designer</div>
+            <div className="relative -top-40 left-36 ">
+              <Image
+                src={gary}
+                alt="Gary portrait"
+                placeholder="blur"
+                className="scale-50 border-2"
+              />
+            </div>
+          </div>
+        </div>
         <MainFeaturesSection />
         <ExtraFeaturesSection />
-        <div class="w-6/12 mx-auto  text-oscuro pb-36">
-          <div class="flex flex-col justify-center w-full">
-            <h3 class="mb-8 text-center">
-              <span class="text-3xl sm:text-3xl lg:text-4xl leading-titles font-bold w-full sm:w-6/12 lg:w-full lg:text-black lg:text-center">
+        <div className="w-6/12 mx-auto  text-oscuro pb-36">
+          <div className="flex flex-col justify-center w-full">
+            <h3 className="mb-8 text-center">
+              <span className="text-3xl sm:text-3xl lg:text-4xl leading-titles font-bold w-full sm:w-6/12 lg:w-full lg:text-black lg:text-center">
                 FAQ
               </span>
             </h3>
             <div>
-              <div class="relative mb-4">
-                <input type="checkbox" id="toggle1" class="toggle hidden" />
+              <div className="relative mb-4">
+                <input type="checkbox" id="toggle1" className="toggle hidden" />
                 <label
-                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  className="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle1"
                 >
                   Why should I use Shadow when I have Spotify or Apple Music?
                 </label>
-                <div class="content bg-primary overflow-hidden">
-                  <p class="p-4">
+                <div className="content bg-primary overflow-hidden">
+                  <p className="p-4">
                     You probably use those apps for music already. It can be
                     easy to get distracted between the countless artists,
                     albums, and songs that you're listening on there. And let's
@@ -284,17 +334,17 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div class="relative mb-4">
-                <input type="checkbox" id="toggle2" class="toggle hidden" />
+              <div className="relative mb-4">
+                <input type="checkbox" id="toggle2" className="toggle hidden" />
                 <label
-                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  className="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle2"
                 >
                   How can I listen to podcasts with my family and friends using
                   Shadow?
                 </label>
-                <div class="content bg-primary overflow-hidden">
-                  <p class="p-4">
+                <div className="content bg-primary overflow-hidden">
+                  <p className="p-4">
                     1. Start a FaceTime call.
                     <br /> 2. Go to the Home Screen, then open Shadow. <br />
                     3. Select a the podcast you want to watch, tap the Play
@@ -304,31 +354,31 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div class="relative mb-4">
-                <input type="checkbox" id="toggle3" class="toggle hidden" />
+              <div className="relative mb-4">
+                <input type="checkbox" id="toggle3" className="toggle hidden" />
                 <label
-                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  className="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle3"
                 >
                   Is Shadow available on Android?
                 </label>
-                <div class="content bg-primary overflow-hidden">
-                  <p class="p-4">
+                <div className="content bg-primary overflow-hidden">
+                  <p className="p-4">
                     Unfortunately not. The app is currently only available on
                     iPhones and iPads with iOS 14 or iPadOS 14 and higher.
                   </p>
                 </div>
               </div>
-              <div class="relative mb-4">
-                <input type="checkbox" id="toggle4" class="toggle hidden" />
+              <div className="relative mb-4">
+                <input type="checkbox" id="toggle4" className="toggle hidden" />
                 <label
-                  class="title block font-bold bg-primary p-4 cursor-pointer"
+                  className="title block font-bold bg-primary p-4 cursor-pointer"
                   for="toggle4"
                 >
                   Is Shadow free?
                 </label>
-                <div class="content bg-primary overflow-hidden">
-                  <p class="p-4">
+                <div className="content bg-primary overflow-hidden">
+                  <p className="p-4">
                     We do offer Shadow for free. However, you can also get
                     Shadow+, which will give you more customization options and
                     extra features. You can get the monthly plan for only $1.49
